@@ -9,5 +9,10 @@ class HomeViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
         value = "食堂の収容人数　38人/89人"
     }
+        private val _text2 = MutableLiveData<String>().apply {
+            value = "購買は混雑しています"
+        }
+    
     val text: LiveData<String> = _text
+    val text2: LiveData<String> = _text2    
 }
