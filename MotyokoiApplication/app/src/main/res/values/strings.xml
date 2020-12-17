@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">MotyokoiApplication</string>
+    <string name="img_description1">Home</string>
+    <string name="img_description2">Home</string>
+    <string name="img_description3">Home</string>
+    <string name="img_description4">Home</string>
+    <string name="img_description5">Home</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
