@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.motyokoiapplication.R
+import kotlinx.android.synthetic.main.fragment_home2.view.*
 
 class HomeFragment : Fragment() {
 
@@ -22,10 +23,10 @@ class HomeFragment : Fragment() {
         homeViewModel =
                 ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+            val textView: TextView = root.findViewById(R.id.text_home)
+            homeViewModel.text.observe(viewLifecycleOwner, Observer {
+                textView.text = it
+            })
         return root
     }
 }
