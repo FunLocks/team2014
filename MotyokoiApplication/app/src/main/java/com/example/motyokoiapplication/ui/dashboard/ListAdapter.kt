@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
 import com.example.motyokoiapplication.R
@@ -17,13 +18,18 @@ class ListAdapter(val context: Context, val UserList: ArrayList<User>) : BaseAda
         val Name = view.findViewById<TextView>(R.id.name_tv)
         val Email = view.findViewById<TextView>(R.id.email_tv)
         val Place =  view.findViewById<TextView>(R.id.place_tv)
-
+        var imageView = view?.findViewById<ImageView>(R.id.imageIcon)
+        imageView?.setImageResource(User.imageId)
+        
         val user = UserList[position]
+
+        
 
         Name.text = user.name
         Email.text = user.email
         Place.text = user.place
 
+        
         return view
     }
 
