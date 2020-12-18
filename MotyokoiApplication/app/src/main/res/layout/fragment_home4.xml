@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:src="@drawable/color_4f"
+        android:src="@drawable/fun_4f_u"
         android:scaleType="fitStart"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

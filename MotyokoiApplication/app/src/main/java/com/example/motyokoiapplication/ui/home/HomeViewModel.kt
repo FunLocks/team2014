@@ -12,7 +12,13 @@ class HomeViewModel : ViewModel() {
         private val _text2 = MutableLiveData<String>().apply {
             value = "購買は混雑しています"
         }
+
+    val textview: MutableLiveData<String> =  MutableLiveData("")
     
     val text: LiveData<String> = _text
-    val text2: LiveData<String> = _text2    
+    val text2: LiveData<String> = _text2
+
+    fun settextview(text:String){
+        textview.value =text
+    }
 }
